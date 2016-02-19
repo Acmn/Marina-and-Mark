@@ -1,0 +1,30 @@
+footer {
+	padding-top: 20px;
+	max-width: 750px;
+	p {
+		font-weight: $regular;
+		color: white;
+		font-size: 0.9em;
+		&.footer-right {
+			text-align: right;
+		}
+	}
+	a {
+		font-weight: $regular;
+		color: white;
+		border-bottom: 1px solid white;
+		font-size: 0.9em;
+		&:hover {
+			color: $brandbasic;
+			border-bottom-color: $brandbasic;
+		}
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 48em) {
+	footer {
+		p, a, p.footer-right {
+			text-align: center;
+		}
+	}
+}

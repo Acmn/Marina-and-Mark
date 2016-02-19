@@ -1,0 +1,25 @@
+html,body {
+    height: 100%;
+    // The html and body elements should not have any padding or margin.
+    background: black;
+}
+
+//FULL HEIGHT DESIGN HACK
+main {
+	min-height: 80vh;
+	figure {
+		max-width: 100%;
+		margin: 10px auto;
+		text-align: center;
+		@media (min-width: 48em) {
+			max-width: 30%;
+			float: right;
+			margin: 0 0 20px 20px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			text-align: center;
+		}
+	}
+}

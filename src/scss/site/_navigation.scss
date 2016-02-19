@@ -1,0 +1,170 @@
+.navbar {
+  background-color: #1b1b1b;
+  margin-bottom: 5px;
+  border-bottom: 2px solid $brandbasic;
+  //max-height: 50px;
+  .top-bar {
+
+  }
+  .navbar-nav {
+    // float: none;
+    // font-size: 1.124em;
+    // margin-top: 5px;
+    li, li.dropdown {
+      font-size: 1.5em;
+      background: none;
+      a, a.open {
+        color: $brandbasic;
+        font-weight: $regular;
+        padding: 15px 10px;
+        font-family: $header-font-family;
+        line-height: 1.5em;
+      }
+      a:hover, a.active {
+        background: none;
+        color: $brandbasiclight;
+      }
+      ul.dropdown-menu {
+        width: 100%;
+        background: #1b1b1b;
+        border-top: 2px solid $brandbasic;
+        .active {
+          a {
+            background: none;
+          }
+        }
+        li {
+          @media (max-width: 61.9em) {
+            a {
+              color: $brandbasic;
+              &:hover {
+                color: $brandbasiclight;;
+              }
+            }
+          }
+        }
+      } 
+    }
+    .active {
+      a, >a {
+        font-weight: $regular;
+        background-color: #1b1b1b;
+        color: $brandbasic;
+      }
+      a:hover, a.active {
+        color: $brandbasiclight;
+        background-color: #1b1b1b;
+      }
+    }
+    @media only screen and (min-width: 62em) {
+      .active.navbuttonTL a {
+        background: linear-gradient(to right, rgba(247,195,77,1) 0%,rgba(216,134,13,1) 100%);
+        color: black;
+      }
+      //Start Button Sparkles
+      li.navbuttonTL {
+        background: linear-gradient(to right, rgba(247,195,77,1) 0%,rgba(216,134,13,1) 100%);
+        border: 2px outset $brandbasic;
+        color: black;
+        transition: 0.5s;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        a {
+          padding: 5px 15px;
+        }
+        &:hover, &:focus, &:active {
+          background: linear-gradient(to right, rgba(216,134,13,1) 0%,rgba(247,195,77,1) 100%);
+          border: 2px inset $brandbasic;
+          color: black;
+          &::before {
+            animation: twinkle 1s 1 forwards;
+          }
+        }
+        &::before {
+          content: url(../img/base/starburst-small.png);
+          position: absolute;
+          left: -12px;
+          top: -12px;
+        }
+      }
+      li.navbuttonBR {
+        transition: 0.5s;
+        &:hover, &:focus {
+          &::after {
+            animation: twinkle 1.5s 1 forwards;
+          }
+        }
+        &::after {
+          content: url(../img/base/starburst-small.png);
+          position: absolute;
+          right: -10px;
+          bottom: -18px;
+          transition: 2s;
+        }
+      }
+      li.btn {
+        a {
+          color: black;
+          &:hover {
+            background: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  ul.social {
+    li {
+      a {
+        padding: 15px 5px;
+      }
+    }
+  }
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  background: #1b1b1b;
+  color: $brandbasic;
+}
+
+.navbar-default {
+  .navbar-toggle {
+    border-color: $brandbasic;
+    .icon-bar {
+      background-color: $brandbasic;
+    }
+    &:hover, &:focus {
+      background-color: black;
+      .icon-bar {
+        background-color: $brandbasic;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  max-width: 280px;
+  margin-right: 20px; 
+  padding: 0;
+  padding-top: 15px; 
+  img {
+    max-width: 100%;
+  }
+  @media (max-width: 33.9em) {
+    max-width: 200px;
+  }
+}
+
+//CHANGE COLLAPSED NAVBAR BG COLOR
+
+/* Small Devices, Tablets */
+.navbar-collapse {
+  background: #1b1b1b;
+  border: none; 
+  li {
+    text-align: left;
+    text-transform: uppercase;
+  }
+  li.btn {
+    padding: 0;
+  }
+}

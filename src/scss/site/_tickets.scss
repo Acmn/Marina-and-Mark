@@ -1,0 +1,137 @@
+.tickets {
+	margin: 0 auto;
+	max-width: 676px;
+	h3 {
+		color: $brandbasic;
+		text-align: center;
+	}
+	.row.ticket-details {
+		margin-bottom:20px;
+		padding-top:20px;
+		padding-bottom:10px;
+		background: rgba(49,49,49,.7);		
+		.calendar {
+			p {
+				font-family: $header-font-family;
+				margin-bottom: 0;
+				font-size: 1.857em;
+				font-weight: 700;
+				text-align: center;
+				span {
+					text-transform: uppercase;
+				}
+			}
+			padding-top: 18px;
+			@media only screen and (min-width: 62em) {
+				padding-top: 0px;
+				border-right: 1px solid $brandbasic;	
+			}
+		}
+		.info {
+			padding-top: 8px;
+			border-left: 1px solid $brandbasic;				
+			border-right: 1px solid black;	
+			@media only screen and (min-width: 62em) {
+				border-left:none;
+				padding-left:40px;
+			}
+			p {
+				font-family: $header-font-family;
+				font-size: 1.414em;
+				text-transform: uppercase;
+				color: $brandbasic;
+				margin-bottom: 8px;
+				line-height: 22px;
+				&:first-of-type {
+					color: white;
+				  font-size: 1.071em;
+				  text-transform: none;
+				}
+			}
+			p.theatre {
+				font-family: $base-font-family;
+			}
+			h5{
+				color:$brandbasic;
+			}
+		}
+		.book {
+			.btn {
+				width: 200px;
+				@media only screen and (max-width: 62em) {
+				margin: 10px;
+				}
+			}
+			.buttonTL {
+			  background: linear-gradient(to right, rgba(247,195,77,1) 0%,rgba(216,134,13,1) 100%);
+			  border: 2px outset $brandbasic;
+			  color: black;
+			  font-size: 1.375em;
+			  font-weight: bold;
+			  transition: 0.5s;
+			  margin-top: 15px;
+			  padding: 5px;
+			  width: 200px;
+			  border-radius: 0;
+			  &:hover, &:focus {
+			    background: linear-gradient(to right, rgba(216,134,13,1) 0%,rgba(247,195,77,1) 100%);
+			    border: 2px inset $brandbasic;
+			    color: black;
+			    &::before {
+			      animation: twinkle 1s 1 forwards;
+			    }
+			  }
+			  &::before {
+			    content: url(../img/base/starburst.png);
+			    position: absolute;
+			    left: -15px;
+    			top: -20px;
+			  }
+			}
+			.buttonBR {
+			  background: linear-gradient(to right, rgba(247,195,77,1) 0%,rgba(216,134,13,1) 100%);
+			  border: 2px outset $brandbasic;
+			  color: black;
+			  font-family: $header-font-family;
+			  font-size: 1.375em;
+			  font-weight: bold;
+			  transition: 0.5s;
+			  margin-top: 15px;
+			  padding: 5px;
+			  width: 200px;
+			  border-radius: 0;
+			  &:hover, &:focus {
+			    background: linear-gradient(to right, rgba(216,134,13,1) 0%,rgba(247,195,77,1) 100%);
+			    border: 2px inset $brandbasic;
+			    color: black;
+			    &::after {
+			      animation: twinkle 1.5s 1 forwards;
+			    }
+			  }
+			  &::after {
+			    content: url(../img/base/starburst.png);
+			    position: absolute;
+			    right: -10px;
+			    bottom: -40px;
+			    transition: 1s;
+			  }    
+			}
+			@keyframes twinkle {
+			  from {
+			    transform: scale3d(1, 1, 1);
+			    opacity: 1;
+			  }
+
+			  50% {
+			    transform: scale3d(.75, .75, .75);
+			    opacity: 0.5;
+			  }
+
+			  to {
+			    transform: scale3d(1, 1, 1);
+			    opacity: 1;
+			  }
+			}
+		}
+	}	
+}

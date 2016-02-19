@@ -1,0 +1,54 @@
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 700;
+
+// We use these to define font stacks
+@font-face {
+  font-family: 'Beloved Sans Bold';
+  src: url('../src/fonts/beloved_sans_bold-webfont.eot');
+  src: url('../src/fonts/beloved_sans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../src/fonts/beloved_sans_bold-webfont.woff2') format('woff2'),
+       url('../src/fonts/beloved_sans_bold-webfont.woff') format('woff'),
+       url('../src/fonts/beloved_sans_bold-webfont.ttf') format('truetype'),
+       url('../src/fonts/beloved_sans_bold-webfont.svg#beloved_sansbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Beloved Sans Regular';
+    src: url('../src/fonts/beloved_sans-webfont.eot');
+    src: url('../src/fonts/beloved_sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../src/fonts/beloved_sans-webfont.woff2') format('woff2'),
+         url('../src/fonts/beloved_sans-webfont.woff') format('woff'),
+         url('../src/fonts/beloved_sans-webfont.ttf') format('truetype'),
+         url('../src/fonts/beloved_sans-webfont.svg#beloved_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hansom_fyregular';
+    src: url('../src/fonts/hansomfy-regular_s-webfont.eot');
+    src: url('../src/fonts/hansomfy-regular_s-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../src/fonts/hansomfy-regular_s-webfont.woff2') format('woff2'),
+         url('../src/fonts/hansomfy-regular_s-webfont.woff') format('woff'),
+         url('../src/fonts/hansomfy-regular_s-webfont.ttf') format('truetype'),
+         url('../src/fonts/hansomfy-regular_s-webfont.svg#hansom_fyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Base Font
+$base-font-family: 'hansom_fyregular', sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 1.3em;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-family: 'hansom_fyregular', sans-serif;
+$header-font-weight: $regular;

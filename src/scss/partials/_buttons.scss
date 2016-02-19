@@ -1,0 +1,77 @@
+//Start Button Sparkles
+.btn {
+  border-radius: 0;
+}
+.buttonTL {
+  background: linear-gradient(to right, rgba(247,195,77,1) 0%,rgba(216,134,13,1) 100%);
+  border: 2px outset $brandbasic;
+  color: black;
+  font-size: 1.375em;
+  font-weight: bold;
+  transition: 0.5s;
+  margin-top: 15px;
+  padding: 5px;
+  width: 300px;
+  &:hover, &:focus {
+    background: linear-gradient(to right, rgba(216,134,13,1) 0%,rgba(247,195,77,1) 100%);
+    border: 2px inset $brandbasic;
+    color: black;
+    &::before {
+      animation: twinkle 1s 1 forwards;
+    }
+  }
+  &::before {
+    content: url(../img/base/starburst.png);
+    position: absolute;
+    left: -33px;
+    top: -33px;
+  }
+  @media only screen and (max-width: 30em) {
+    width: 200px;
+  }
+}
+.buttonBR {
+  background: linear-gradient(to right, rgba(247,195,77,1) 0%,rgba(216,134,13,1) 100%);
+  border: 2px outset $brandbasic;
+  color: black;
+  font-size: 1.375em;
+  font-weight: bold;
+  transition: 0.5s;
+  margin-top: 15px;
+  padding: 5px;
+  width: 300px;
+  &:hover, &:focus {
+    background: linear-gradient(to right, rgba(216,134,13,1) 0%,rgba(247,195,77,1) 100%);
+    border: 2px inset $brandbasic;
+    color: black;
+    &::after {
+      animation: twinkle 1s 1 forwards;
+    }
+  }
+  &::after {
+    content: url(../img/base/starburst.png);
+    position: absolute;
+    right: -33px;
+    bottom: -43px;
+    transition: 1s;
+  } 
+  @media only screen and (max-width: 30em) {
+    width: 200px;
+  }    
+}
+@keyframes twinkle {
+  from {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale3d(.75, .75, .75);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}

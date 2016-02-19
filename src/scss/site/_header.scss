@@ -1,0 +1,21 @@
+.site-header {
+	@media (max-width: 47.9em) {
+		padding: 0;
+	}
+}
+h2.subheader {
+	font-size: 1em;
+	margin: 15px auto;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	/* Small Devices, Tablets */
+	@media only screen and (max-width: 30em) {
+		font-size: 0.6em;
+	}
+}
+.site-branding {
+	background-color: black;
+	filter: filter-gradient(#0d2e61, #7db9e8, vertical);
+	margin: auto;
+}

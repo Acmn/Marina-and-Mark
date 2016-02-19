@@ -1,0 +1,41 @@
+// PARAGRAPHS
+p {
+	font-family: $base-font-family;
+	color: white;
+	font-size: $base-font-size;
+	.lead {
+		font-weight: $regular;
+	}
+}
+p.uppercase {
+	font-variant: small-caps;
+	margin-bottom: 3px;
+	font-weight: $bold;
+	font-size: 20px;
+	color: $brandbasic;
+}
+small {
+	font-size: 80%;
+}
+// LINKS
+a {
+	font-weight: $regular;
+	color: $brandbasic;	
+	font-family: $base-font-family;
+	text-decoration: none !important;
+    transition:.5s;
+	&:hover {
+		color: $brandcomplimentlight;
+		text-decoration: none;
+	}
+}
+/** HEADERS **/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 10px 0;
+	font-family: $header-font-family;
+	font-weight: $header-font-weight;
+	color: $brandbasicdark;
+	}
+h1 a, h2 a, h3 a {
+	font-family: $header-font-family;
+}

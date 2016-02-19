@@ -1,0 +1,213 @@
+.groups {
+	margin: 40px auto;
+	h2 {
+		font-size: 3em;
+    margin: 50px auto 20px;
+	}
+	h2.gsection_title {
+  	font-size: 1.8em;
+  	margin: 25px 0;
+  }
+	.entry-content {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+	.book {
+		position: relative;
+		max-width: 250px;
+		margin: 0 auto;
+		text-transform: uppercase;
+		font-size: 1.7em;
+		.btn {
+			width: 250px;
+		}
+		.buttonTL {
+		  background: linear-gradient(to right, rgba(247,195,77,1) 0%,rgba(216,134,13,1) 100%);
+		  border: 2px outset $brandbasic;
+		  color: black;
+		  font-size: 1.375em;
+		  font-weight: bold;
+		  transition: 0.5s;
+		  margin-top: 15px;
+		  padding: 5px;
+		  width: 250px;
+		  border-radius: 0;
+		  &:hover, &:focus {
+		    background: linear-gradient(to right, rgba(216,134,13,1) 0%,rgba(247,195,77,1) 100%);
+		    border: 2px inset $brandbasic;
+		    color: black;
+		    &::before {
+		      animation: twinkle 1s 1 forwards;
+		    }
+		  }
+		  &::before {
+		    content: url(../img/base/starburst.png);
+		    position: absolute;
+		    left: -31px;
+				top: -17px;
+		  }
+		}
+		.buttonBR {
+		  background: linear-gradient(to right, rgba(247,195,77,1) 0%,rgba(216,134,13,1) 100%);
+		  border: 2px outset $brandbasic;
+		  color: black;
+		  font-family: $header-font-family;
+		  font-size: 1.375em;
+		  font-weight: bold;
+		  transition: 0.5s;
+		  margin-top: 15px;
+		  padding: 5px;
+		  width: 250px;
+		  border-radius: 0;
+		  &:hover, &:focus {
+		    background: linear-gradient(to right, rgba(216,134,13,1) 0%,rgba(247,195,77,1) 100%);
+		    border: 2px inset $brandbasic;
+		    color: black;
+		    &::after {
+		      animation: twinkle 1.5s 1 forwards;
+		    }
+		  }
+		  &::after {
+		    content: url(../img/base/starburst.png);
+		    position: absolute;
+		    right: -32px;
+				bottom: -47px;
+		    transition: 1s;
+		  }    
+		}
+		@keyframes twinkle {
+		  from {
+		    transform: scale3d(1, 1, 1);
+		    opacity: 1;
+		  }
+
+		  50% {
+		    transform: scale3d(.75, .75, .75);
+		    opacity: 0.5;
+		  }
+
+		  to {
+		    transform: scale3d(1, 1, 1);
+		    opacity: 1;
+		  }
+		}
+	}
+	.gform_wrapper {
+		.top_label {
+			.gfield_label {
+				display: none;
+			}
+		}
+		//remove sublabels
+		.ginput_container_name,
+		.ginput_container_address,
+		.ginput_container_email {
+			span > label {
+				display: none;
+			}
+			span > input {
+				margin-bottom: 10px;
+			}
+		}
+		.subscribe-confirm {
+			.ginput_container_checkbox {
+				ul {
+					li {
+						label {
+							line-height: 1em;
+							font-style: normal;
+							color: white;
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+		}
+		.gsection_description {
+			font-style: normal;
+			color: white;
+			font-size: 1.3em;
+		}
+		.gform_footer {
+		  position: relative;
+			max-width: 250px;
+			margin: 0 auto;
+			background: linear-gradient(to right, rgba(247,195,77,1) 0%,rgba(216,134,13,1) 100%);
+		  border: 2px outset $brandbasic;
+		  color: black;
+		  font-size: 2em;
+		  font-weight: bold;
+		  transition: 0.5s;
+		  margin-top: 35px;
+		  padding: 5px;
+		  width: 250px;
+		  border-radius: 0;
+		  text-align: center;
+		  input[type=submit] {
+		  	border: none;
+		  	text-transform: uppercase;
+		  	font-family: $base-font-family;
+		  }
+		  &:hover, &:focus {
+		    background: linear-gradient(to right, rgba(216,134,13,1) 0%,rgba(247,195,77,1) 100%);
+		    border: 2px inset $brandbasic;
+		    &::before {
+		      animation: twinkle 1s 1 forwards;
+		    }
+		    &::after {
+		    	animation: twinkle 1.5s 1 forwards;
+		    }
+		  }
+		  &::before {
+		    content: url(../img/base/starburst.png);
+		    position: absolute;
+		    left: -33px;
+    		top: -34px;
+		    display: inline-block;
+		    padding:0;
+		    height: auto;
+		    width: auto;
+		  }
+		  &::after {
+		    content: url(../img/base/starburst.png);
+		    position: absolute;
+		    right: -32px;
+				bottom: -47px;
+		    transition: 1s;
+		  }    
+		  @media only screen and (max-width: 30em) {
+		    width: 250px;
+		  }
+		}
+		@keyframes twinkle {
+		  from {
+		    transform: scale3d(1, 1, 1);
+		    opacity: 1;
+		  }
+
+		  50% {
+		    transform: scale3d(.75, .75, .75);
+		    opacity: 0.5;
+		  }
+
+		  to {
+		    transform: scale3d(1, 1, 1);
+		    opacity: 1;
+		  }
+		}
+		.gform_button {
+			// Reset all input button styling to match CSS buttons
+			padding: 0;
+			margin: 0;
+			background: none;
+			color: black;
+		  &:hover, &:focus {
+		    color: black;
+		  }
+		}
+	}
+	.gforms_confirmation_message h4 {
+		text-transform: uppercase;
+		font-size: 3em;
+	}
+}
