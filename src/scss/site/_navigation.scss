@@ -119,6 +119,9 @@
         padding: 15px 5px;
       }
     }
+    li.hashtag {
+      text-transform: lowercase;
+    }
   }
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {

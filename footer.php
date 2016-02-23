@@ -8,6 +8,9 @@
 
 	<footer class="container site-footer">
 		<div class="site-info row">
+			<div class="col-xs-12">
+				<h2 class="subheader"><?php echo get_bloginfo ( 'description' );  ?></h2>	
+			</div>
 			<div class="col-xs-12 col-sm-8">
 				<p>All rights reserved &copy; <?php echo date('Y'); ?> Marina Prior and Mark Vincent</p>
 			</div><!-- /.col-xs-12 .col-sm-8 -->

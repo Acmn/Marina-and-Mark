@@ -59,16 +59,13 @@
 	  <?php if (is_front_page()) { ?>
 			<header id="masthead" class="site-header container">
 				<section>
-					<h2 class="subheader"><?php echo get_bloginfo ( 'description' );  ?></h2>
 					<div class="row site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<h1 class="site-title sr-only"><?php bloginfo( 'name' ); ?></h1>
 							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/base/key-artwork.jpg" alt="Mark &amp; Marina" class="img-responsive center-block">
 						</a>
 					</div><!-- /.row .site-branding -->
-
-					</section>
-				</div><!-- /.row -->
+				</section>
 			</header><!-- #masthead -->
 		<?php 
 	  	} else {
@@ -82,8 +79,7 @@
 							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/base/key-artwork.jpg" alt="Mark &amp; Marina" class="img-responsive center-block">
 						</a>
 					</div><!-- /.row .site-branding -->
-					</section>
-				</div><!-- /.row -->
+				</section>
 			</header><!-- #masthead -->
 	  <?php 		
 	  	}// end is front page    

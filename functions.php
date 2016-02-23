@@ -15,20 +15,16 @@
 	/**********************
 	Add theme supports
 	**********************/
-	function starter_theme_support() {
-
+	// rss thingy
+	add_theme_support('automatic-feed-links');
+	// Add post formarts supports. http://codex.wordpress.org/Post_Formats
+	add_theme_support('post-formats', array('gallery', 'link', 'image', 'video', 'audio'));
 	// Add post thumbnail supports. http://codex.wordpress.org/Post_Thumbnails
-	add_theme_support('post-thumbnails');
+	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'small-feature', 400, 247, true ); // Ratio 10:6.18
 	add_image_size( 'medium-feature', 600, 371, true ); // Ratio 10:6.18
 	add_image_size( 'square-feature', 600, 600, true ); // Ratio 1:1
 	
-	// rss thingy
-	add_theme_support('automatic-feed-links');
-	
-	// Add post formarts supports. http://codex.wordpress.org/Post_Formats
-	add_theme_support('post-formats', array('gallery', 'link', 'image', 'video', 'audio'));
-}
 	//LOGIN PAGE
 	function my_loginlogo() {
 	  echo '<style type="text/css">
