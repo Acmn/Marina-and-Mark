@@ -38,9 +38,9 @@
         <div class="col-xs-12 col-md-4">
           <div class="book">
           <?php if( $link ){ ?>
-            <a href="<?php echo $link; ?>" target="_blank" class="btn buttonTL buttonBR gtm-ticket-button" data-gtm-event="#">BOOK NOW</a>
+            <a href="<?php echo $link; ?>" target="_blank" class="btn buttonTL buttonBR gtm-ticket-button" data-city="<?php the_title(); ?>">BOOK NOW</a>
             <?php } else { ?>
-              <p>Not on sale yet</p>
+              <p><br>ON SALE MARCH 4</p>
             <?php } ?>
           </div><!-- /.book -->
         </div><!-- /.col-xs-12 col-md-4 -->

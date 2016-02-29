@@ -11,6 +11,15 @@
 			<div class="col-xs-12">
 				<h2 class="subheader"><?php echo get_bloginfo ( 'description' );  ?></h2>	
 			</div>
+			<div class="col-xs-4 col-sm-2 col-sm-offset-3">
+				<a href="http://www.sonymusic.com.au/" target="_blank" title="Sony Music"><img class="img-responsive center-block" src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/sony-music.png" alt="Sony Music Australia"></a>
+			</div>
+			<div class="col-xs-4 col-sm-2">
+				<a href="http://www.ralphcarr.com/" target="_blank" title="Ralph Carr Management"><img class="img-responsive center-block" src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/rcm-logo.png" alt="Ralph Carr Management"></a>
+			</div>
+			<div class="col-xs-4 col-sm-2">
+				<a href="http://www.foxtelarts.com.au/" target="_blank" title="Foxtel Arts"><img class="img-responsive center-block" src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/foxtel-arts-logo.png" alt="Foxtel Arts"></a>
+			</div>
 			<div class="col-xs-12 col-sm-8">
 				<p>All rights reserved &copy; <?php echo date('Y'); ?> Marina Prior and Mark Vincent</p>
 			</div><!-- /.col-xs-12 .col-sm-8 -->

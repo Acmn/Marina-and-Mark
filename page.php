@@ -3,7 +3,7 @@
 	<main id="primary" class="container">
 	<?php while (have_posts()) : the_post(); ?>
     <div class="row">
-      <article id="post-<?php the_ID(); ?>" class="col-xs-12">  
+      <article id="post-<?php the_ID(); ?>" class="col-xs-12 col-md-8 col-md-offset-2">  
         <div class="entry-content">
           <h1 class="entry-title"><?php the_title(); ?></h1>
           <?php the_content(); ?>
