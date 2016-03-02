@@ -17,16 +17,16 @@
         <h3 class="text-center"><?php the_title(); ?></h3>
       </div><!-- /.col-xs-12 -->
     </div><!-- /.row -->
-    <?php if( have_rows('ticket_details') ): ?>
-    <?php while( have_rows('ticket_details') ): the_row(); 
-      // vars
-      $date = get_sub_field('date');
-      $month = get_sub_field('month');
-      $info = get_sub_field('tickets_info');
-      $theatre = get_sub_field('theatre');
-      $link = get_sub_field('booking_link');
-      $map = get_sub_field('map');
-      ?>
+      <?php if( have_rows('ticket_details') ): ?>
+      <?php while( have_rows('ticket_details') ): the_row(); 
+        // vars
+        $date = get_sub_field('date');
+        $month = get_sub_field('month');
+        $info = get_sub_field('tickets_info');
+        $theatre = get_sub_field('theatre');
+        $link = get_sub_field('booking_link');
+        $map = get_sub_field('map');
+        ?>
       <div class="row ticket-details">
         <div class="col-xs-4 col-md-2 calendar">
           <p><?php echo $date; ?><span class="hidden-sm"><br /></span> <?php echo $month; ?></p>
@@ -56,5 +56,10 @@
   ?>  
   <?php endwhile; // End the loop ?>
   <?php // end section ?>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+      <p class="lead text-center">A limited number of Premium tickets are available which include a special post performance meet and greet with Marina and Mark!</p>
+    </div><!-- /.col-xs-8 .col-xs-offset-2 .col-sm-6 .col-sm-offset-3-->
+  </div><!-- /.row -->
 </section>
 <!-- end partials/tickets-main.php -->

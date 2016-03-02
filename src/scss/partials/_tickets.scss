@@ -147,3 +147,11 @@
 		}
 	}	
 }
+.single-ticket {
+	p.lead {
+		margin-top: 50px;
+		@media (min-width: 768px) {
+			font-size: 29px;
+		}
+	}
+}

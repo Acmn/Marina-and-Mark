@@ -1023,6 +1023,15 @@ figure.alignnone {
     opacity: 1;
   }
 }
+.single-ticket p.lead {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .single-ticket p.lead {
+    font-size: 29px;
+  }
+}
+
 .about-the-show {
   margin: 20px auto;
   padding: 25px 5px;
