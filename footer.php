@@ -37,6 +37,7 @@
 <!--[if lt IE 9 ]>
 	<script src="<?php bloginfo('template_url'); ?>/build/REM-unit-polyfill/js/rem.min.js" type="text/javascript"></script>
 <![endif]-->
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/build/production.min.js"></script>
+	<script src="<?php bloginfo('stylesheet_directory'); ?>/build/production.min.js"></script>	
+
 </body>
 </html>
