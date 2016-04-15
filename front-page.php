@@ -13,7 +13,6 @@
  * @subpackage Twenty_Sixteen
  * @since Twenty Sixteen 1.0
  */
-
 get_header(); ?>
 <!-- start front-page.php -->
 	<main id="primary" class="container-fluid">
