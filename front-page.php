@@ -20,6 +20,7 @@ get_header(); ?>
 		<?php get_template_part( 'partials/groups', 'home' ); ?>
 		<?php get_template_part( 'partials/subscribe', 'home' ); ?>
 		<?php get_template_part( 'partials/about', 'home' ); ?>
+		<?php get_template_part( 'partials/sony', 'home' ); ?>
 	</main><!-- /.container .content-area -->
 
 
